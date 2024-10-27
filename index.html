@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>loggin landing page</title>
+    
+</head>
+<style>
+
+
+body{
+min-height: 100vh;
+width:100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-color: #f8f6f6;
+}
+.separator{
+    width: 200px;
+    height: 3px;
+    background-color: blueviolet;
+    margin-top:1px ;
+}
+
+section.side{
+background: url(ll.jpg)no-repeat;
+background-size: 100% 100%;
+}
+.container{
+    background-color: orangered;
+    align-items: center;
+    display: grid;
+    padding: 3em;
+    margin-top: 15%;
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0.5px 1px;
+    margin-right: 60%;
+}
+.title{
+font-family: sans-serif;
+font-size:xx-large;
+color: #FFF;
+margin-top: auto;
+}
+.submit{
+
+background-color: #FFF;
+color:orangered;
+border-radius: 5px;
+background-color: greenyellow;
+margin-bottom: 35%;
+}
+  @media only screen and (max-width:600px){
+section.side{
+background: url(ll.jpg)no-repeat;
+background-size: 100% 100%;
+display: flex;
+width: 450%;
+}
+body{width: 270px;}
+
+.container{
+    background-color: orangered;
+    align-items: center;
+    display: grid;
+    padding: 1em;
+    margin-top: 40%;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0.5px 1px;
+    margin-right: 60%;
+}
+  }
+</style>
+<body>
+    
+    <section class="side">
+
+    </section>
+   
+ <center>       
+<div class="container">
+    <h1 class="title">
+welcome back </h1>
+<center>
+    <div  class="separator"></div></center>
+<p style="color: #f8f6f6; font-family: sans-serif;" >please provide loggin cradiantle to proceed and have access to all our services</p>
+
+
+    <center>
+<input id="email" type="text" name="username" placeholder ="abc name" style=" background-color: #FFF; border-radius: 5px; padding: 10px; ">
+<i class="fas fa-user" style="color: #FFF;"></i><br>
+<br>
+<input id="pass" type="text" name="password" placeholder="password"  style=" background-color: #FFF; padding: 10px; border-radius: 5px;"             >
+<i class="fas fa-lock" style="color: #FFF;" ></i> <br>
+<br>
+<button  class="submit" id="log" onclick="logingBtn()" >loggin</button>
+</center>
+
+
+</div>
+</center>
+
+    </section>
+
+</body>
+<script src="app.js"></script>
+</html>
